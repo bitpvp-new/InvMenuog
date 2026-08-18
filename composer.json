@@ -3,8 +3,13 @@
     "description": "A PocketMine-MP virion to create and manage virtual inventories!",
     "type": "library",
     "license": "GPL-3.0",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "autoload": {
         "classmap": ["src"]
+    },
+    "require-dev": {
+        "nethergamesmc/pocketmine-mp": "dev-main"
     },
     "authors": [
         {
@@ -17,5 +22,19 @@
             "spec": "3.0",
             "namespace-root": "muqsit\\invmenu"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:Amber-PM/Amber.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/vapebw/BedrockData.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/vapebw/BedrockProtocol.git"
+        }
+    ]
 }
